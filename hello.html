@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> sight-eduplus </title>
+        <style>
+            
+            body{
+                background-image: url("Learning5.jpg") ; background-repeat: no-repeat; background-size: cover;
+            }
+            img{
+                position: relative;  margin: 0px 20px;
+            }
+            
+            #mydiv{
+                background-color: rgba(230,230,230,0.8);
+                width: 400px;
+                height: 480px;
+                border-width:2px 0px 0px 0px;
+                border-color: #811eb8;
+                border-style: solid;
+                padding: 50px;
+                padding-top: 30px;
+                float: right;
+                margin: 50px;
+            
+            }
+            
+            #userType{
+               width:405px;
+               height: 40px;
+               border-width:1px;
+               border-radius: 5px;
+               border-color: #811eb8;
+               margin-top: 5px;
+                
+            }
+            #myinput1{
+                width: 400px;
+                height: 35px;
+                border-width: 2px;
+                border-radius: 5px;
+                border-color: #811eb8;
+                margin-top: 5px;
+
+            }
+            #myinput2{
+                width: 400px;
+                height: 35px;
+                border-width: 2px;
+                border-radius: 5px;
+                border-color:#811eb8;;
+                margin-top: 5px;
+            }
+            .mybtn{
+                width: 105px;
+                padding: 12px;
+                margin: 10px;
+                border-radius: 5px;
+                border-width: 1px;
+                border-style: none;
+                font-size: 24px ;
+                font-weight:500;
+                font-family: Georgia;
+                background-color:#811eb8;
+                color: white;
+                margin-left: 130px;
+            
+            }
+            .mybtn:hover{
+                border: 1px solid #811eb8;
+                background-color:transparent;
+                color:#811eb8;
+            }
+            a{
+                color: #811eb8;
+                text-decoration: none;
+            }
+
+
+        </style>
+    </head>
+    <body>
+        <div id="mydiv" >
+            <h1 style="color: #811eb8"> Sign In </h1> 
+            <span> Sign In As* </span> <br>
+            <select name="userType" id="userType" required="required" class="selectAs">
+                <option value="">Select</option>
+                <option value="admin">Admin/Owner</option>
+                <option value="subadmin">Sub Admin</option>
+                <option value="staff">Staff</option>
+                <option value="stud">Student</option>
+                <option value="par">Parent/Guardian</option>
+                <option value="lab">EduPlus Lab User</option>
+                
+
+            </select>
+            <br>
+            <br>
+            <span> UserId* </span> <br> 
+            <input type="text" placeholder="Enter Your UserId/School No./Email" id="myinput1"> <br> <br>
+            <span> Password* </span> <br>
+            <input type="text" placeholder="Enter Your Password" id="myinput2"> <br> <br>
+            <button class="mybtn"> Sign In </button> <br> <br>
+            <p style="color: #811eb8"> Forget Password? </p>
+            <p> Click <a href="https://sight-eduplus.com">Here</a> to Sign Up as Admin/Owner </p>
+            <p> Click <a href="https://sight-eduplus.com">Here</a> to Sign Up as EduPlus Lab User </p>
+        </div>
+
+    </body>
+</html>
